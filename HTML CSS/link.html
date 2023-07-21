@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{/* unvisited link */
+            color:red;
+            text-decoration: none;
+        }
+        /* visited link */
+        a:visited {
+        color: green;
+        }
+
+        /* mouse over link */
+        a:hover {
+        color: hotpink;
+        text-decoration: underline;
+        }
+
+        /* selected link */
+        a:active {
+        color: blue;
+        }
+        a.button{
+            color:white;
+            background-color: #f44336;
+            padding: 14px 25px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            border-radius: 5px;
+
+        }
+        a.button:hover, a.button:active {
+            background-color: red;
+        }
+        a.button2:link, a.button2:visited {
+            background-color: white;
+            color: black;
+            border: 2px solid green;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: help;
+        }
+
+        a.button2:hover, a.button2:active {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="#"> This is link</a>
+    <a href="#" target="_blank" class="button">Button</a>
+    <a href="#" target="_blank" class="button2">Contact</a>
+
+</body>
+</html>

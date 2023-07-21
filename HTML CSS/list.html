@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ul_list_style{
+            list-style-type: circle;
+            /*circle,square*/
+        }
+        .ul_list_style2{
+            list-style-image: url('../IMG/HACKER.gif');
+        }
+        .ol_list_style{
+            list-style-type:lower-greek;
+            /*circle,square*/
+        }
+        .list_style_position{
+            list-style-position:inside ;
+            /*inside ,outside*/
+        }
+        ul.demo {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        ol.style_demo1{
+            background: #ff9999;
+             padding: 20px;
+        }
+        ul.style_demo2{
+                background: #3399ff;
+                padding: 20px;
+        }
+        ol.style_demo1 li{
+            background:#ffe5e5;
+            color:darkred;
+            padding: 5px;
+            margin-left: 35px;
+        }
+        ul.style_demo2 li{
+                background: #cce5ff;
+                color: darkblue;
+                margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--unordered lists (<ul>) - the list items are marked with bullets
+    ordered lists (<ol>) - the list items are marked with numbers or letters-->
+    <ul class="ul_list_style">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <ul class="ul_list_style2">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <ol class="ol_list_style">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ul class="list_style_position">
+        <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant
+        </li>
+        <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia
+            sinensis, an evergreen shrub (bush) native to Asia</li>
+        <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its
+            original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+    </ul>
+
+    <p>Remove bullets, margin and padding from list:</p>
+    <ul class="demo">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <h1>Styling Lists With Colors</h1>
+    
+<ol class="style_demo1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    
+    <ul class="style_demo2">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+</body>
+</html>

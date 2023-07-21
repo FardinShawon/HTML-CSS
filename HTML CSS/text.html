@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+    <style>
+        /*
+        text-align
+        text-align-last
+        direction
+        unicode-bidi
+        vertical-align
+        */
+        div{
+            border:1px solid gray;
+            padding:8px;
+        }
+        h1{
+            text-align: center;/*left,right,center,justify*/
+            text-transform: uppercase;
+            /* text-transform property is used to specify uppercase and lowercase letters in a text.*/
+            color:white;
+            background-color: gray;
+            text-decoration: underline red 2px;
+        }
+        p{
+            text-indent: 50px;
+            /*text-indent property is used to specify the indentation of the first line of a text:*/
+            text-align:justify;
+            letter-spacing: 3px;
+        }
+        a{
+            text-decoration: none;
+            /*All links in HTML are underlined by default. Sometimes you see that links are styled with no underline. The text-decoration: none; is used to remove the underline from links.
+            */
+            color:#008CBA;
+        }
+        p.c{
+            text-align-last: center;
+            /*text-align-last property specifies how to align the last line of a text.*/
+        }
+        p.ex1{
+            direction: rtl;/*right theke asbe*/
+            unicode-bidi: bidi-override;/*ulta kore asbe*/
+        }
+        .vertical_align{
+            vertical-align: sub;
+            /*sub,sup,baseline,text-top,text-bottom;*/
+        }
+        .text_decoration{
+            text-decoration-line: underline;
+            /*uderline,overline,line-through,overline underline*/
+            text-decoration-color: red;
+            text-decoration-style: wavy;
+            /*wavy,solid,double*/
+            text-decoration-thickness: 5px;
+            /*25%,2px,auto(default)*/
+        }
+        p.capitalize{
+            text-transform: capitalize;
+            /*uppercase,lowercase,capitalize*/
+            line-height:3;
+        }
+        h2.letter_spacing{
+            letter-spacing: 10px;
+            /*line-height property is used to specify the space between lines*/
+        }
+        .word_spacing{
+            word-spacing: 10px;
+            /*word-spacing property is used to specify the space between the words in a text.*/
+        }
+        .white_spacing{
+            white-space: nowrap;
+            /*hite-space property specifies how white-space inside an element is handled.*/
+            /*nowrap,normal(default)*/
+        }
+        .text_shadow{
+            text-shadow: 2px 2px 5px red;
+            /* you only specify the horizontal shadow (2px) and the vertical shadow (2px):*/
+            /* add a blur effect (5px) to the shadow:*/
+        }
+        .text_shadow_demo1{
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        .text_shadow_demo2{
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
+        .text_shadow_demo3{
+              color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>text formatting</h1>
+    <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and
+        color properties.
+        The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from
+        this colored
+        <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.
+    </p>
+    <p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+    <p class="ex1">This is right-to-left text direction.</p>
+    <p>A<span class="vertical_align">2</span>B</p>
+    <p class="text_decoration">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, officia.</p>
+    <p class="capitalize">This text is capitalized.</p>
+    <h2 class="letter_spacing">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, accusamus quos.</h2>
+
+    <p class="word_spacing">This is a paragraph with smaller word spacing.</p>
+    <p class="white_spacing">
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+    </p>
+    <h2 class="text_shadow">Text Shadow</h2>
+    <h2 class="text_shadow_demo1">Text shadow effect</h2>
+    <h2 class="text_shadow_demo2">Text shadow effect</h2>
+    <h2 class="text_shadow_demo3">Text shadow effect</h2>
+
+</body>
+</html>

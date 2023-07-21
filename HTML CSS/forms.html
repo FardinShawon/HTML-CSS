@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        div#form1{
+            border-radius: 5px;
+            background-color: #f8cccc;
+            padding: 20px;
+        }
+        input[type=text]:focus ,textarea:focus{
+            background-color: lightblue;
+            transition: 0.3s;
+          }
+        input[type=text],select{
+            width:100%;
+            padding: 12px 20px;
+            margin:8px 0;
+            /*Tip: When you have many inputs after each other, you might also want to add some margin, to add more space outside of them:*/
+            display: inline-block;
+            border:1px solid #ccc;
+            border-radius: 5px;
+            transition: 0.5s;
+           box-sizing: border-box;/*too much important*/
+           /*we have set the box-sizing property to border-box. This makes sure that the padding and eventually borders are included in the total width and height of the elements.*/
+        }
+        
+        input[type=submit]{
+            width:100%;
+            border:none;
+            background-color: #4CAF50;
+            color:white;
+            padding: 14px 20px;
+            margin:8px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        textarea{
+            width:100%;
+            margin-top: 6px;
+            box-sizing: border-box;
+            padding: 12px 20px;
+            
+            resize:none;
+        }
+        select:focus{
+            background-color: lightgrey;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="form1">
+        <form action="#">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Your name...">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Your last name...">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <label for="text_area">About Yourself</label>
+            <textarea name="" id="text_area" cols="30" rows="3" placeholder="some text"></textarea>
+
+            <input type="submit" value="Submit">
+            
+
+
+        </form>
+    </div>
+</body>
+</html>
